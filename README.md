@@ -434,6 +434,11 @@ Hooks are properly removed after each call to avoid accumulation across slider i
 
 ---
 
+## Output
+
+![WhatsApp Image 2026-02-21 at 10 10 16 PM](https://github.com/user-attachments/assets/7185fd05-c663-4619-9781-18e061dacd40)
+
+
 ## 🚀 How to Run
 
 ### Prerequisites
