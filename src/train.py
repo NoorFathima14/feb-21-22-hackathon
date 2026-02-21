@@ -2,6 +2,7 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 from tqdm import tqdm
+import os
 
 from src.models.spatial_baseline import SpatialBaselineCNN
 from src.data.datasets import get_dataloaders
@@ -109,7 +110,8 @@ def main():
         print(f"Train Loss: {train_loss:.4f}, Train Acc: {train_acc:.4f}")
         print(f"Val Loss: {val_loss:.4f}, Val Acc: {val_acc:.4f}")
 
-    torch.save(model.state_dict(), "baseline_model.pth")
+    os.makedirs("models", exist_ok=True)
+    torch.save(model.state_dict(), "models/baseline_model.pth")
     print("Model saved.")
 
 
