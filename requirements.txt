@@ -3,3 +3,6 @@ torchvision
 matplotlib
 numpy
 tqdm
+streamlit
+opencv-python
+scikit-learn

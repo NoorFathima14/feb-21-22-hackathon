@@ -3,3 +3,5 @@ data/cifake/
 data/.DS_Store
 .DS_Store
 models/*.pth
+data/sample_images/.DS_Store
+src/models/__pycache__/
