@@ -1,2 +1,4 @@
 .env
 data/cifake/
+data/.DS_Store
+.DS_Store
