@@ -343,20 +343,13 @@ Structurally similar to the baseline but with:
 ### Confusion Matrices
 
 **Baseline Model (Clean Test Set):**
-```
-              Predicted
-              FAKE    REAL
-Actual FAKE | 9636  |  364 |
-       REAL |  638  | 9362 |
-```
+
+<img width="518" height="437" alt="image" src="https://github.com/user-attachments/assets/8bca33f7-29d4-4c1f-8472-378afcafae5a" />
+
 
 **Robust Model (Clean Test Set):**
-```
-              Predicted
-              FAKE    REAL
-Actual FAKE | 9403  |  597 |
-       REAL |  670  | 9330 |
-```
+
+<img width="524" height="433" alt="image" src="https://github.com/user-attachments/assets/871b0f0e-6b4c-4184-a74a-50380f3b6d68" />
 
 ### Adversarial Robustness Curve
 
@@ -565,29 +558,3 @@ By exposing the model to FGSM examples during training:
 | Training Platform | Kaggle (CPU) |
 | Dataset | CIFAKE (Kaggle) |
 
----
-
-## 👥 Team
-
-**Hackathon:** FEB-21-22  
-**Challenge:** Build → Break → Improve: Navigating Synthetic Reality
-
-| Member | Role |
-|--------|------|
-| Sujan | Model Evaluation, Grad-CAM, Adversarial Analysis |
-| Team | Architecture, Training, Streamlit App |
-
----
-
-## 📄 License
-
-This project was built during a hackathon and is intended for educational and research purposes.
-
----
-
-## 📚 References
-
-- Goodfellow et al. (2015) — *Explaining and Harnessing Adversarial Examples* (FGSM paper)
-- Selvaraju et al. (2017) — *Grad-CAM: Visual Explanations from Deep Networks*
-- Bird & Lotfi (2023) — *CIFAKE: Image Classification and Explainable Identification of AI-Generated Synthetic Images*
-- Madry et al. (2018) — *Towards Deep Learning Models Resistant to Adversarial Attacks*
