@@ -1,3 +1,10 @@
+# Team Members 
+Noor Fathima (22PD26)
+Sarnika Sanjeev Kumar (22PD31)
+Sujan S (22PD35)
+
+# Problem statement 3
+
 # 🧠 Build → Break → Improve: Navigating Synthetic Reality
 
 > A hackathon project that builds a synthetic image detector, attacks it with adversarial perturbations, and hardens it — mirroring real-world AI security workflows.
