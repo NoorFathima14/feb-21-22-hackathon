@@ -18,7 +18,7 @@ st.set_page_config(
 )
 
 
-st.title("Adversarial Robustness in Synthetic Image Detection")
+st.title("Navigating Synthetic Reality")
 st.markdown("Baseline CNN vs Adversarially Trained CNN")
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
