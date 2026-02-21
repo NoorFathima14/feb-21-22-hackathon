@@ -8,31 +8,13 @@ Sujan S (22PD35)
 
 # Problem statement 3
 
-# 🧠 Build → Break → Improve: Navigating Synthetic Reality
+# Build → Break → Improve: Navigating Synthetic Reality
 
 > A hackathon project that builds a synthetic image detector, attacks it with adversarial perturbations, and hardens it — mirroring real-world AI security workflows.
 
 ---
 
-## 📋 Table of Contents
-
-- [Problem Statement](#-problem-statement)
-- [Project Overview](#-project-overview)
-- [Project Structure](#-project-structure)
-- [Dataset](#-dataset)
-- [Phase 1: Build — Synthetic Image Detector](#-phase-1-build--synthetic-image-detector)
-- [Phase 2: Break — Adversarial Attacks (FGSM)](#-phase-2-break--adversarial-attacks-fgsm)
-- [Phase 3: Improve — Adversarial Training](#-phase-3-improve--adversarial-training)
-- [Results & Metrics](#-results--metrics)
-- [Interactive Demo (Streamlit App)](#-interactive-demo-streamlit-app)
-- [How to Run](#-how-to-run)
-- [Key Findings & Analysis](#-key-findings--analysis)
-- [Tech Stack](#-tech-stack)
-- [Team](#-team)
-
----
-
-## 🎯 Problem Statement
+## Problem Statement
 
 > A photo of a crime scene. A viral image of a public figure. A piece of evidence in court. What if none of them were real?
 
@@ -40,7 +22,7 @@ The rapid advancement of generative AI has produced highly realistic synthetic i
 
 ---
 
-## 🌐 Project Overview
+## Project Overview
 
 This project follows a three-phase research-inspired cycle:
 
@@ -54,7 +36,7 @@ A **Streamlit web app** ties everything together — letting users upload any im
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 feb-21-22-hackathon/
@@ -114,7 +96,7 @@ feb-21-22-hackathon/
 
 ---
 
-## 📦 Dataset
+## Dataset
 
 **CIFAKE – Real and AI-Generated Synthetic Images**  
 Source: [Kaggle — birdy654/cifake](https://www.kaggle.com/datasets/birdy654/cifake-real-and-ai-generated-synthetic-images)
@@ -139,7 +121,7 @@ This stabilizes CNN training and is standard for image classification tasks.
 
 ---
 
-## 🏗️ Phase 1: Build — Synthetic Image Detector
+## Phase 1: Build — Synthetic Image Detector
 
 ### Model Architecture: `SpatialBaselineCNN`
 
@@ -221,7 +203,7 @@ In our baseline model, Grad-CAM reveals that the model heavily focuses on **text
 
 ---
 
-## ⚔️ Phase 2: Break — Adversarial Attacks (FGSM)
+## Phase 2: Break — Adversarial Attacks (FGSM)
 
 ### Attack Method: Fast Gradient Sign Method (FGSM)
 
@@ -282,7 +264,7 @@ The baseline model learned to detect AI-generated images primarily by recognizin
 
 ---
 
-## 🛡️ Phase 3: Improve — Adversarial Training
+## Phase 3: Improve — Adversarial Training
 
 ### Strategy: FGSM Adversarial Training
 
@@ -319,7 +301,7 @@ Structurally similar to the baseline but with:
 
 ---
 
-## 📊 Results & Metrics
+## Results & Metrics
 
 ### Clean Accuracy Comparison
 
@@ -359,7 +341,7 @@ The robustness curve (Epsilon vs Accuracy) clearly shows:
 
 ---
 
-## 🖥️ Interactive Demo (Streamlit App)
+## Interactive Demo (Streamlit App)
 
 The `app.py` Streamlit application provides a full interactive interface with four distinct sections.
 
@@ -436,10 +418,14 @@ Hooks are properly removed after each call to avoid accumulation across slider i
 
 ## Output
 
+![WhatsApp Image 2026-02-21 at 10 10 15 PM (1)](https://github.com/user-attachments/assets/4722ded0-1f78-4deb-9dd0-9a1d1b0ebeb7)
+![WhatsApp Image 2026-02-21 at 10 10 15 PM (2)](https://github.com/user-attachments/assets/09319895-7c85-48e1-91b4-3a3970eefef3)
+![WhatsApp Image 2026-02-21 at 10 10 15 PM](https://github.com/user-attachments/assets/9b53198d-3720-42e5-ba77-32454c4400ed)
+![WhatsApp Image 2026-02-21 at 10 10 16 PM (1)](https://github.com/user-attachments/assets/e1d90650-90ed-46d1-9cf5-449611333cf7)
 ![WhatsApp Image 2026-02-21 at 10 10 16 PM](https://github.com/user-attachments/assets/7185fd05-c663-4619-9781-18e061dacd40)
 
 
-## 🚀 How to Run
+## How to Run
 
 ### Prerequisites
 
@@ -509,7 +495,7 @@ streamlit run app.py
 
 ---
 
-## 🔍 Key Findings & Analysis
+## Key Findings & Analysis
 
 ### What the Baseline Model Actually Learned
 
@@ -549,7 +535,7 @@ By exposing the model to FGSM examples during training:
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Component | Technology |
 |-----------|-----------|
