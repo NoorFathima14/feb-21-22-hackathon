@@ -1,7 +1,3 @@
-# ===========================
-# src/data/explore.py
-# ===========================
-
 import os
 import random
 import matplotlib.pyplot as plt
