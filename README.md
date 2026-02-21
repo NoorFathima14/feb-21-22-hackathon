@@ -198,12 +198,7 @@ FC(256→2) → Logits [FAKE / REAL]
 
 **Confusion Matrix (Baseline):**
 
-```
-              Predicted
-              FAKE    REAL
-Actual FAKE | 9636  |  364 |
-       REAL |  638  | 9362 |
-```
+<img width="518" height="437" alt="image" src="https://github.com/user-attachments/assets/f8292f70-4340-47fb-a80f-4b454d32422c" />
 
 **Clean Accuracy: 94.99%**
 
