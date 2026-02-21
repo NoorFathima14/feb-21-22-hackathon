@@ -200,13 +200,16 @@ FC(256→2) → Logits [FAKE / REAL]
 
 <img width="518" height="437" alt="image" src="https://github.com/user-attachments/assets/f8292f70-4340-47fb-a80f-4b454d32422c" />
 
+
 **Clean Accuracy: 94.99%**
 
 ### Visual Explainability: Grad-CAM
 
+
 **What is Grad-CAM?**
 
 Grad-CAM (Gradient-weighted Class Activation Mapping) visualizes which regions of an image drive the model's decision.
+
 
 **How it works:**
 1. Compute gradient of the predicted class score with respect to the final conv layer's feature maps
