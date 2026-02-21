@@ -57,10 +57,6 @@ def train_one_epoch_adv(model, loader, criterion, optimizer, device, epsilon):
 
     return running_loss / len(loader), correct / total
 
-
-# --------------------------------------
-# Clean Evaluation (reuse logic)
-# --------------------------------------
 def evaluate(model, loader, criterion, device):
 
     model.eval()
